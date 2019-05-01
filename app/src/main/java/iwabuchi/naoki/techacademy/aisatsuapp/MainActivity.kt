@@ -17,15 +17,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
 
         button1.setOnClickListener(this)
-        button2.setOnClickListener(this)
     }
 
     override fun onClick(v: View) {
-        if (v.id == R.id.button1) {
-            showTimePickerDialog()
-        } else if (v.id == R.id.button2) {
-            tv.text = tv.text.toString()
-        }
+                showTimePickerDialog()
     }
 
     private fun showTimePickerDialog() {
